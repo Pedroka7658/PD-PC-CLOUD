@@ -1,0 +1,155 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <title>PC Pedro Cloud</title>  
+  
+  <!-- Favicon -->  
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/179/179386.png" type="image/png"/>  
+  
+  <style>  
+    * {  
+      box-sizing: border-box;  
+    }  
+  
+    body {  
+      margin: 0;  
+      font-family: Arial, sans-serif;  
+      text-align: center;  
+      position: relative;  
+      min-height: 100vh;  
+      overflow-y: auto;  
+      background-color: #1a1a1a;  
+    }  
+  
+    .background::before {  
+      content: "";  
+      position: fixed;  
+      top: 0;  
+      left: 0;  
+      width: 100%;  
+      height: 100%;  
+      background: rgba(26, 26, 26, 0.9);  
+      backdrop-filter: blur(6px);  
+      z-index: -1;  
+    }  
+  
+    header {  
+      background-color: #000;  
+      color: white;  
+      padding: 15px;  
+      font-size: 24px;  
+      font-weight: bold;  
+      position: relative;  
+      z-index: 1;  
+    }  
+  
+    .container {  
+      margin-top: 60px;  
+      cursor: pointer;  
+      transition: transform 0.2s;  
+      position: relative;  
+      z-index: 1;  
+      padding: 20px;  
+    }  
+  
+    .container:hover {  
+      transform: scale(1.05);  
+    }  
+  
+    .icon-pc {  
+      width: 150px;  
+      height: 150px;  
+      margin: 0 auto;  
+      fill: white;  
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));  
+    }  
+  
+    p {  
+      margin-top: 15px;  
+      font-size: 24px;  
+      color: white;  
+      font-weight: bold;  
+    }  
+  
+    .highlight-line {  
+      width: 180px;  
+      height: 3px;  
+      margin: 10px auto 20px;  
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);  
+      border-radius: 4px;  
+      box-shadow: 0 0 10px rgba(255,255,255,0.4);  
+    }  
+  
+    .login-info {  
+      color: #ccc;  
+      font-size: 16px;  
+      white-space: pre-line;  
+      margin-top: 10px;  
+    }  
+  
+    /* Rodapé com brilho animado */  
+    .footer {  
+      position: fixed;  
+      bottom: 0;  
+      width: 100%;  
+      background-color: #111;  
+      color: #aaa;  
+      font-size: 14px;  
+      text-align: center;  
+      padding: 8px 0;  
+      z-index: 10;  
+      overflow: hidden;  
+    }  
+  
+    .footer::after {  
+      content: "";  
+      position: absolute;  
+      top: 0;  
+      left: -100%;  
+      width: 100%;  
+      height: 100%;  
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);  
+      animation: shine 3s infinite;  
+    }  
+  
+    @keyframes shine {  
+      0% { left: -100%; }  
+      50% { left: 100%; }  
+      100% { left: 100%; }  
+    }  
+  </style>  
+</head>  
+<body class="background">  
+  
+  <!-- Cabeçalho -->  
+  <header>PD PC CLOUD</header>  
+  
+  <!-- Ícone e texto clicáveis -->  
+  <div class="container" onclick="irParaRDP()">  
+    <svg class="icon-pc" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">  
+      <path d="M56 4H8a4 4 0 0 0-4 4v40a4 4 0 0 0 4 4h16v4h-4a2 2 0 0 0 0 4h24a2 2 0 0 0 0-4h-4v-4h16a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4ZM8 8h48v36H8Zm28 44h-8v-4h8Z"/>  
+    </svg>  
+    <p>PC Cloud</p>  
+    <div class="highlight-line"></div>  
+    <div class="login-info">  
+      Após clicar em PC Cloud, copie isto:<br>  
+      /user:rdpserverss\<br>  
+      /Pass:pmQ54PJZxN1MtIu\  
+    </div>  
+  </div>  
+  
+  <!-- Rodapé com brilho animado -->  
+  <footer class="footer">  
+    Criado por: Pedro e ChatGPT  
+  </footer>  
+  
+  <script>  
+    function irParaRDP() {  
+      window.location.href = "https://my.rdpserverss.com/";  
+    }  
+  </script>  
+  
+</body>  
+</html>
