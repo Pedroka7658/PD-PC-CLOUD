@@ -1,6 +1,6 @@
 ❗❗Aqui esta o link do pc cloud faça o             que ele pede e pronto❗❗
 
-  https://file.garden/Zlj_NEF91Qwlu1WC/baixe%20a%20html%20do%20cloud.html
+  https://file.garden/Zlj_NEF91Qwlu1WC/3rtg.html
   
 se quiser deixar a experiência melhor instale o anydesk
 
